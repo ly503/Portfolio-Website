@@ -1,0 +1,87 @@
+@font-face {
+  font-family: 'Corbert-Regular';
+  src:  url('Corbert-Regular-webfont.woff2') format('woff2'),
+        url('Corbert-Regular-webfont.woff') format('woff');
+}
+
+body {
+	font-family: 'Corbert-Regular';
+	margin-left: 15px;
+}
+
+h1 {
+	font-size: 18px;
+	margin: 10px;
+}
+
+p {
+	float: left;
+	font-size: 14px;
+}
+
+.header {
+	height: 50px;
+}
+
+.header h1 {
+	float: left;
+	margin: 0;
+	font-size: 36px;
+	line-height: 50px;
+}
+
+.header ul {
+	float: right;
+	margin: 0;
+	padding: 0;
+	list-style-type: none;
+}
+
+.header ul li {
+	display: inline-block;
+	line-height: 50px;
+	margin: 10px;
+}
+
+.header h1 a:hover {
+text-decoration: none;
+}
+
+
+a:link {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: none;
+}
+
+a:visited {
+    color:rgba(0, 0, 0, 0.5);
+}
+
+a:hover {
+    color: rgba(0, 0, 0, 0.5);
+    text-decoration: underline;
+}
+
+a:active {
+    color: rgba(0, 0, 0, 1);
+    text-decoration: underline;
+}
+
+.about {
+	float: none;
+	font-size: 25px;
+	margin-top: 0;
+}
+
+img.left-float {
+	float: left;
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+footer {
+	float: left;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+}
