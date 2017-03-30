@@ -79,6 +79,26 @@ img.left-float {
 	margin-right: 10px;
 }
 
+
+.contact-form {
+	text-align: center;
+}
+
+input {
+	border: 2px solid black;
+	border-radius: 4px;
+	margin-bottom: 10px;
+	box-sizing: border-box;
+}
+
+
+textarea {
+	border: 2px solid black;
+	border-radius: 4px;
+	margin-top: 5px;
+	margin-bottom: 10px;
+}
+
 footer {
 	float: left;
 	font-size: 12px;
