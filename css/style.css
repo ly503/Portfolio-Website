@@ -4,6 +4,12 @@
         url('Corbert-Regular-webfont.woff') format('woff');
 }
 
+/*general styles*/
+
+.wrapper {
+	font-color: black;
+}
+
 body {
 	font-family: 'Corbert-Regular';
 	margin-left: 15px;
@@ -19,37 +25,19 @@ p {
 	font-size: 14px;
 }
 
-.photogrid { 
-	column-count: 4;
-	column-gap: 0px; 
-}
-
 img {
 	width:300px;
 }
 
-@media all and (max-width 1200px) and (min-width: 1000px) {
-	.photogrid {
-		column-count: 4;
-	}
-}
 
-@media all and (max-width:999px) and (min-width:768px) {
-	.photogrid {
-		column-count: 3;
-	}
+footer {
+	float: left;
+	font-size: 12px;
+	width: 100%;
+	text-align: center;
+	position:fixed;
+    bottom:0;
 }
-
-@media all and (max-width:767px) and (min-width:481px) {
-	.photogrid {
-		column-count: 2;
-	}
-}
-
-@media all and (max-width:480px) and (min-width: 1px) {
-	.photogrid {
-		column-count: 1;
-	}
 }
 
 .header {
@@ -100,6 +88,62 @@ a:active {
     text-decoration: underline;
 }
 
+/*media queries*/
+
+@media all and (max-width 1200px) and (min-width: 1000px) {
+	.photogrid {
+		column-count: 4;
+	}
+}
+
+@media all and (max-width:999px) and (min-width:768px) {
+	.photogrid {
+		column-count: 3;
+	}
+}
+
+@media all and (max-width:767px) and (min-width:481px) {
+	.photogrid {
+		column-count: 2;
+	}
+}
+
+@media all and (max-width:480px) and (min-width: 1px) {
+	.photogrid {
+		column-count: 1;
+	}
+}
+
+/*work index page*/
+.work-title {
+	font-size: 55px;
+}
+
+.work-title a {
+	color: black;
+	text-decoration: none;
+}
+
+.work-title:hover {
+	font-size: 60px;
+	transition-timing-function: .03s;
+}
+
+.portfolio-section {
+	margin-left: 70px;
+	padding: 10px;
+}
+
+/*Photography page*/
+
+.photogrid { 
+	column-count: 4;
+	column-gap: 0px; 
+}
+
+
+/*About page*/
+
 .about {
 	float: none;
 	font-size: 25px;
@@ -112,6 +156,7 @@ img.left-float {
 	margin-right: 10px;
 }
 
+/*Contact Page*/
 
 .contact-form {
 	text-align: center;
@@ -130,11 +175,4 @@ textarea {
 	border-radius: 4px;
 	margin-top: 5px;
 	margin-bottom: 10px;
-}
-
-footer {
-	float: left;
-	font-size: 12px;
-	width: 100%;
-	text-align: center;
 }
