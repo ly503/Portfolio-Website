@@ -5,14 +5,27 @@
 }
 
 /*general styles*/
+* {
+	margin: 0;
+	padding: 0;
+}
+
 
 .wrapper {
-	font-color: black;
+	width: 100%;
+	height: 100%;
+	background-image: url('../images/40and6-web.jpg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: fixed;
+	margin: 0
+	padding: 0;
+	overflow: auto;
 }
 
 body {
 	font-family: 'Corbert-Regular';
-	margin-left: 15px;
+	font-color: black;
 }
 
 h1 {
@@ -23,32 +36,41 @@ h1 {
 p {
 	float: left;
 	font-size: 14px;
+	color: white;
 }
 
 img {
 	width:300px;
 }
 
-
-footer {
-	float: left;
+.footer {
+	clear: both;
 	font-size: 12px;
 	width: 100%;
+	height: 100px;
 	text-align: center;
-	position:fixed;
-    bottom:0;
+	position:relative;
+    bottom:-100px;
+    background-color: black;
 }
+
+.footer p {
+	line-height: 50px;
 }
 
 .header {
-	height: 50px;
+	height: 80px;
+	width: 100%;
+	margin: 0;
+	background-color:rgba(0,0,0,0.4);
+	overflow: hidden;
 }
 
 .header h1 {
 	float: left;
 	margin: 0;
 	font-size: 36px;
-	line-height: 50px;
+	line-height: 80px;
 }
 
 .header ul {
@@ -64,13 +86,43 @@ footer {
 	margin: 10px;
 }
 
-.header h1 a:hover {
-	text-decoration: none;
+.header ul li a {
+	color: white;
 }
 
+.header h1 a:hover {
+	text-decoration: none;
+	color: white;
+}
+
+.logo img {
+	width: 80px;
+}
+
+.logo:hover {
+	opacity: .8;
+}
+
+.content {
+	width: 100%;
+	background-image: none;
+	box-sizing: border-box;
+}
+
+.content h1 {
+	font-size: 35px;
+	color: black;
+	width: 100%;
+	background-color: white;
+	margin-left: 0;
+	margin-top: 25px;
+	margin-bottom: 25px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	box-sizing: border-box;
+}
 
 a:link {
-    color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
 }
 
@@ -81,6 +133,7 @@ a:visited {
 a:hover {
     color: rgba(0, 0, 0, 0.5);
     text-decoration: underline;
+    cursor: pointer;
 }
 
 a:active {
@@ -90,7 +143,7 @@ a:active {
 
 /*media queries*/
 
-@media all and (max-width 1200px) and (min-width: 1000px) {
+@media all and (max-width: 1200px) and (min-width: 1000px) {
 	.photogrid {
 		column-count: 4;
 	}
@@ -116,7 +169,12 @@ a:active {
 
 /*work index page*/
 .work-title {
+	width: 500px;
+	background-color: white;
 	font-size: 55px;
+	padding-left: 10px;
+	padding-bottom: 10px;
+	margin: 30px;
 }
 
 .work-title a {
@@ -125,13 +183,14 @@ a:active {
 }
 
 .work-title:hover {
-	font-size: 60px;
-	transition-timing-function: .03s;
+	font-size: 65px;
+	transition-duration: .3s;
 }
 
 .portfolio-section {
+	width: 500px;
 	margin-left: 70px;
-	padding: 10px;
+	margin-bottom: 50px;
 }
 
 /*Photography page*/
@@ -139,40 +198,147 @@ a:active {
 .photogrid { 
 	column-count: 4;
 	column-gap: 0px; 
+	overflow: scroll;
+	background-color: rgba(255,255,255, 0.8);
+	padding-top: 30px;
+}
+
+ 
+
+/*Journalism Page*/
+
+.square-content-block {
+	box-sizing: border-box;
+	margin: auto;
+	width: 400px;
+	height: 250px;
+	background-color: rgba(255,255,255, 0.8);
+	float: left;
+	margin: 10px;
+
+}
+
+.square-content-block h2 {
+	padding: 5px;
+}
+
+.square-content-block ul {
+	list-style-type: none;
+}
+
+.square-content-block ul li {
+	padding: 5px;
+}
+
+
+
+/*web dev page*/
+.content .web-block {
+	width: 50%;
+	height: 300px;
+	float: right;
+	padding: 5px;
+	background-color:rgba(255,255,255, 0.8);
+	box-sizing: border-box;
+}
+
+.content .web-block ul {
+	list-style-type: none;
+	margin-left: 10px;
+}
+
+.content .web-block ul li {
+	font-size: 20px;
+	margin-bottom: 15px;
+}
+
+.content .web-block h2 {
+	font-size: 30px;
+	margin: 5px;
+	padding-bottom: 5px;
+}
+
+.content .ux-block {
+	width: 50%;
+	height: 300px;
+	padding-right: 15px;
+	background-color:rgba(255,255,255, 0.8);
+	box-sizing: border-box;
+}
+
+.content .ux-block p {
+	margin-left: 10px;
+	font-size: 20px;
+}
+
+
+.content .ux-block h2 {
+	font-size: 30px;
+	margin: 5px;
+	padding-bottom: 5px;
 }
 
 
 /*About page*/
+.about-section {
+	width: 80%;
+	height: 450px;
+	background-color: rgba(0,0,0,.4);
+	margin: 50px;
+
+}
 
 .about {
 	float: none;
 	font-size: 25px;
-	margin-top: 0;
+	margin: 20px;
+
 }
 
 img.left-float {
 	float: left;
-	margin-left: 10px;
 	margin-right: 10px;
+	margin-left: 20px;
 }
+
+
+
 
 /*Contact Page*/
 
 .contact-form {
 	text-align: center;
+	margin-top: 30px;
 }
 
 input {
-	border: 2px solid black;
-	border-radius: 4px;
+	border: 2px solid white;
 	margin-bottom: 10px;
+	width: 300px;
+	height: 30px;
 	box-sizing: border-box;
 }
 
 
 textarea {
-	border: 2px solid black;
-	border-radius: 4px;
+	border: 2px solid white;
 	margin-top: 5px;
 	margin-bottom: 10px;
+	width: 300px;
+	height: 200px;
+}
+
+.submit {
+	width: 65px;
+	height: 35px;
+	border: 2px solid #1D2951;
+	border-radius: 4px;
+	color: white;
+	background-color: #1D2951;
+	font-size: 14px;
+}
+
+.submit:hover {
+	opacity: .9;
+	cursor: pointer;
 }
