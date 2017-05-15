@@ -122,6 +122,29 @@ img {
 	box-sizing: border-box;
 }
 
+.nav .dropdown-menu{
+	display: none;
+	list-style-type: none;
+}
+
+
+.dropdown-item {
+	display: inline;
+	width: 30px;
+	color: white;
+}
+
+/*.dropdown-menu a {
+	color: white;
+	text-decoration: none;
+	display: block;
+}
+
+.dropdown:hover .dropdown-content {
+	display: block
+}
+*/
+
 a:link {
     text-decoration: none;
 }
@@ -162,8 +185,97 @@ a:active {
 }
 
 @media all and (max-width:480px) and (min-width: 1px) {
+	/*general styles*/
+
+	.wrapper {
+		width: 480px;
+		height: 100%;
+		background-image: url("../images/40and6-mobile.jpg");
+		background-repeat: no-repeat;
+		background-size: cover;
+	}
+
+	.header {
+		width: 100%;
+	}
+
+	.header ul {
+		float: left;
+	}
+
+	.content {
+		width: 480px;
+		margin: 0 auto;
+	}
+
+	/*index page*/
+
+	.portfolio-section {
+		width: 450px;
+		margin: 0 auto;
+	}
+
+	.work-title {
+		width: 90%;
+		font-size: 14px;
+		margin: 0;
+	}
+
+	/*photography page*/
+
 	.photogrid {
 		column-count: 1;
+	}
+
+	.photogrid img {
+		width: 100%;
+	}
+
+	/*contact page*/
+
+	.content .contact-form {
+		margin: 0 auto;
+	}
+
+	/*about page*/
+
+	img.left-float {
+		width: 100%;
+		margin: 0;
+		padding: 0;
+	}
+
+	.about-section {
+		width: 100%;
+		margin: 0;
+		float: left;
+		background-color: transparent;
+	}
+
+	.about {
+		font-size: 12px;
+	}
+
+	/*web dev page*/
+
+	.ux-block {
+		clear:both;
+		width: 100%;
+		float: left;
+	}
+
+	.web-block {
+		width: 100%;
+	}
+
+	/*general styles*/
+
+	.footer {
+		width: 100%;
+		height: 100px;
+		text-align: left;
+		position:relative;
+	    bottom:-100px;
 	}
 }
 
